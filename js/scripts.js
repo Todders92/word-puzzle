@@ -5,18 +5,9 @@ $(document).ready(function() {
     console.log(sentence);
     var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     for(var i = 0; i < sentence.length; i++){
-    // var newsentence = sentence.map(function(letter) {
       vowels.forEach(function(vowel) {
         if (vowel === sentence[i]) {
-          // sentence[i].replace(sentence[i], "-");
-          // console.log(letter)
-          // sentence.splice(sentence[i]);
-          // console.log(sentence);
-          // sentence.push("-");
-          // sentence.push("-");
           sentence[i] = "-"
-         
-          
         }
       });
     };
